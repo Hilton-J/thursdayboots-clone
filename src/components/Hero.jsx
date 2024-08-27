@@ -1,11 +1,18 @@
+import Button from "./Button"
 import NavBar from "./NavBar"
 
 const Hero = () => {
   return (
     <div className="bg-hero-bg1P md:bg-hero-bg1L bg-no-repeat bg-cover bg-center h-screen flex flex-col">
       <NavBar />
-      <div className="flex-1 flex">
-
+      <div className="flex-1 flex text-white  ">
+        <div className="text-center w-full h-full md:w-[400px] space-y-9 flex flex-col md:justify-center">
+          <h1 className="font-play text-3xl md:text-5xl font-bold">Highest Quality. <br /> Honest Prices.</h1>
+          <h2>Handcrafted With Integrity</h2>
+          <div className='space-x-2'>
+            <Button text={'SHOP MEN'} />
+            <Button text={'SHOP WOMEN'} /></div>
+        </div>
       </div>
     </div>
   )
