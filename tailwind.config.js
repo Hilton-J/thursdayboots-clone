@@ -18,7 +18,8 @@ export default {
       },
       fontFamily: {
         body: ['Montserrat'],
-        play: ['Playfair Display']
+        play: ['Playfair Display'],
+        review: ['PT Serif']
       },
     },
   },

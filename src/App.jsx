@@ -1,10 +1,14 @@
-import Hero from './components/Hero'
+import HeroSlides from './components/HeroSlides'
+import NavBar from './components/NavBar'
+import Reviews from './components/Reviews'
 
 function App() {
 
   return (
     <>
-      <Hero />
+      <NavBar />
+      <HeroSlides />
+      <Reviews />
     </>
   )
 };
