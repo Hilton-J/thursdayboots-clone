@@ -5,3 +5,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .dotNumbers button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.dotNumbers button:after {
+  display: none;
+} */
+
+@layer base {
+  h2 {
+    font-family: "Playfair Display";
+  }
+}

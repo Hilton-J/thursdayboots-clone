@@ -15,6 +15,20 @@ export default {
 
         'hero-bg3L': "url('https://thursdayboots.com/cdn/shop/files/2800x1600-Men-Encore-White-240820_2c657bfe-35e3-4830-b42c-5d7130383e28_1920x1088.jpg?v=1724274223')",
         'hero-bg3P': "url('https://thursdayboots.com/cdn/shop/files/768x1024-Men-Encore-White-240820_97ffdd87-5c05-4c9d-97e9-5637ee83c612_672x896.jpg?v=1724274228')",
+
+        'womenBoots': "url('https://thursdayboots.com/cdn/shop/files/1400x1000-Women-Legend-BlackMatte-240827_3dfc2b98-1352-4844-89e6-1b551a9497b9_608x448.jpg?v=1724881316')",
+
+        'menBoots': "url('https://thursdayboots.com/cdn/shop/files/1400x100-Men-Captain-Arizona-240806_509a576e-2a96-4e78-b651-485e866c6721_1400x1000.jpg?v=1723062859')",
+
+        'menShoes': "url('https://thursdayboots.com/cdn/shop/files/1024x1024-Men-Lincoln-RichMahogany-240820_d88d1cd7-4439-4b57-85b2-8f254505506b_224x224.jpg?v=1724274256')",
+
+        'menJacket': "url('https://thursdayboots.com/cdn/shop/files/1024x1024-Men-Keanu-Black-240813_4c05bece-1422-467b-a3f3-620a6a959764_224x224.jpg?v=1723667774')",
+
+        'menSneakers': "url('https://thursdayboots.com/cdn/shop/files/1024x1024-Men-LowTop-White-240827_74a5af94-2687-4f92-aea3-2a39817cdf31_224x224.jpg?v=1724881346')",
+
+        'womenSneakers': "url('https://thursdayboots.com/cdn/shop/files/1024x1024-Womens-Encore-White-081624-1_8124ddb1-6035-4292-9290-e40f242e316f_224x224.jpg?v=1724274278')",
+
+        'womenShoes': "url('https://thursdayboots.com/cdn/shop/files/1024x1024-Women-PennyPlatform-Black-240813_435b3f76-bdeb-4b65-bd17-9c5c5c042a6b_224x224.jpg?v=1723667848')",
       },
       fontFamily: {
         body: ['Montserrat'],
