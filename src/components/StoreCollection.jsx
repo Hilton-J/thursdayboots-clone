@@ -2,11 +2,11 @@
 
 const StoreCollection = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-10 gap-3 md:px-5 hover:">
+    <div className="grid grid-cols-2 md:grid-cols-10 gap-3 md:px-3 ">
 
       <div className="col-span-2 md:col-span-5 relative">
         <a className="flex justify-center" href="/collections/boots">
-          <img src="https://thursdayboots.com/cdn/shop/files/1400x100-Men-Captain-Arizona-240806_509a576e-2a96-4e78-b651-485e866c6721_1400x1000.jpg?v=1723062859" alt="Men's Boots" className="size-full" />
+          <img src="https://thursdayboots.com/cdn/shop/files/1400x100-Men-Captain-Arizona-240806_509a576e-2a96-4e78-b651-485e866c6721_1400x1000.jpg?v=1723062859" alt="Men's Boots" />
           <div className="absolute text-white h-full flex items-center ">
             <h2 className="">Men&apos;s Boots</h2>
           </div>

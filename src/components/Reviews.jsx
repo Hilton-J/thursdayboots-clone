@@ -10,7 +10,7 @@ const Reviews = () => {
   return (
 
 
-    <div className='bg-[#f8f8f8] m-5 space-y-6 text-center'>
+    <div className='bg-[#f8f8f8] m-3 space-y-6 text-center'>
 
       <h2 className="">WHAT PEOPLE ARE SAYING</h2>
       <div>

@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import Reviews from './components/Reviews'
 import StoreCollection from './components/StoreCollection'
 import WhyThursday from './components/WhyThursday'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Reviews />
       <StoreCollection />
       <WhyThursday />
+      <Footer />
     </>
   )
 };

@@ -9,7 +9,7 @@ const TheEden = () => {
           <h1 className="font-play text-3xl md:text-5xl font-bold">The Eden</h1>
           <h2>A Sophisticated Slip-On Loafer,<br />Now Availble In 5 Colors</h2>
           <div className=' flex-1 flex md:flex-none md:items-start items-end justify-center pb-32'>
-            <Button text={'SHOP NOW'} />
+            <Button text={'SHOP NOW'} style={'bg-white hover:bg-[#d8d8d8] text-black py-[14px] px-3 text-sm min-w-[175px]'} />
           </div>
         </div>
       </div>
