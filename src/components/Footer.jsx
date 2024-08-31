@@ -1,4 +1,8 @@
-
+import { AiFillFacebook } from "react-icons/ai";
+import Button from "./Button"
+import { IoLogoInstagram, IoLogoPinterest } from "react-icons/io5";
+import { RiTwitterXLine } from "react-icons/ri";
+import { BsYoutube } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -7,14 +11,15 @@ const Footer = () => {
 
       <footer className="">
         <div className="mx-auto w-full max-w-screen-xl">
-          <div className="flex justify-between flex-wrap flex-col md:flex-row">
+
+          <div className="flex justify-between flex-wrap flex-col md:flex-row divide-y divide-slate-200 text-[14px] ">
 
             {/* ======================= SHOP ================================= */}
-            <div className="px-5 py-6">
-              <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase ">
+            <div className="px-5 py-6 ">
+              <h2 className="mb-4 text-gray-900 ">
                 Shop
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
                     Men&apos;s Boots
@@ -70,10 +75,10 @@ const Footer = () => {
 
             {/* ======================= ABOUT ================================= */}
             <div className="px-5 py-6">
-              <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-4 text-gray-900">
                 About
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Our Story
@@ -104,10 +109,10 @@ const Footer = () => {
 
             {/* ======================= SUPPORT ================================= */}
             <div className="px-5 py-6">
-              <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-4  text-gray-900">
                 Support
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     FAQ
@@ -147,107 +152,49 @@ const Footer = () => {
             </div>
 
             {/* ======================= SIGN UP ================================= */}
-            <div className="px-5 py-6">
-              <h2 className="mb-4 text-sm font-semibold text-gray-900 uppercase">
+            <div className="px-5 py-6 flex flex-col">
+              <h2 className="mb-7 font-medium  text-center">
                 Sign Up For Early Access & Exclusive Events
               </h2>
-              <div className="newsletter-wrap" style={{ transition: "all" }}>
-                <form
-                >
-                  <div className="klaviyo_field_group" style={{ transition: "all" }}>
-                    <label
-                      htmlFor="k_id_email"
-                      hidden=""
-                      style={{ transition: "all" }}
-                      className=""
-                      data-userway-font-size={16}
-                    >
-                      Email
-                    </label>{" "}
-                    <input
-                      type="email"
-                      className="email"
-                      defaultValue=""
-                      required=""
-                      name="email"
-                      id="k_id_email"
-                      placeholder="email@example.com"
-                      aria-label="Translation missing: en.general.footer.email"
-                      style={{ transition: "all" }}
-                      data-userway-font-size={15}
-                    />
-                  </div>
-                  <div className="klaviyo_messages" style={{ transition: "all" }}>
-                    <div
-                      className="success_message"
-                      hidden=""
-                      style={{ transition: "all" }}
-                      data-userway-font-size={16}
-                    >
-                      Thanks for subscribing!
-                      <br style={{ transition: "all" }} />
-                      Please check your email for a confirmation message
-                    </div>
-                    <div
-                      className="error_message"
-                      hidden=""
-                      style={{ transition: "all" }}
-                      data-userway-font-size={16}
-                    >
-                      Please recheck the info you entered
-                    </div>
-                  </div>
-                  <div className="klaviyo_form_actions" style={{ transition: "all" }}>
-                    <button
-                    >
-                      <span
-                        className="button-label-available"
-                        style={{ transition: "all" }}
-                        data-userway-font-size={13}
-                      >
-                        Join
-                        <span
-                          className="mobile--hide"
-                          style={{ transition: "all" }}
-                          data-userway-font-size={13}
-                        >
-                          &nbsp;Team Thursday
-                        </span>
-                      </span>{" "}
-                      <span
-                        className="button-label-error"
-                        style={{ transition: "all" }}
-                        data-userway-font-size={13}
-                      >
-                        Error
-                      </span>{" "}
-                      <span
-                        className="button-label-success"
-                        style={{ transition: "all" }}
-                        data-userway-font-size={13}
-                      >
-                        Success
-                      </span>
-                      <div className="button-label-spinner" style={{ transition: "all" }}>
-                        <svg
-                          className="svg-icon icon-spinner "
-                          xmlns="http://www.w3.org/2000/svg"
-                          style={{ transition: "all" }}
-                        >
-                          {" "}
-                          <desc style={{ transition: "all" }} data-userway-font-size={13}>
-                            Translation missing: en.general.icons.spinner Icon
-                          </desc>{" "}
-                          <use xlinkHref="#reuse-spinner" style={{ transition: "all" }} />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
-                </form>
+              <form className="space-x-3">
+                <input
+                  type="email"
+                  className="border-2 border-black py-2 text-sm px-4 w-[75%]"
+                  defaultValue=""
+                  required=""
+                  name="email"
+                  id="email"
+                  placeholder="email@example.com"
+                />
+                <Button text={"JOIN"} style={'font-robo bg-[#2374ab] hover:bg-[#d8d8d8] text-white py-[10px] px-3 text-sm w-[100px]'} />
+              </form>
+              <div className='text-2xl text-neutral-600 flex justify-center space-x-5 mt-6'>
+                <a className="hover:text-neutral-400"><IoLogoInstagram /></a>
+                <a className="hover:text-neutral-400"><AiFillFacebook /></a>
+                <a className="hover:text-neutral-400"><RiTwitterXLine /></a>
+                <a className="hover:text-neutral-400"><IoLogoPinterest /></a>
+                <a className="hover:text-neutral-400"><BsYoutube /></a>
               </div>
+              <a className="text-center mt-auto hover:text-[#2374ab] cursor-pointer underline">View In Accessibility Mode</a>
+            </div>
 
+            <div className="px-5 py-6">
+              <ul className=" text-gray-500 flex justify-center gap-6 text-xs ">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                    Privacy Statement
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                    Terms of Service
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+
+
         </div>
       </footer>
 

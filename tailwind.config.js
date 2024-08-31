@@ -33,7 +33,8 @@ export default {
       fontFamily: {
         body: ['Montserrat'],
         play: ['Playfair Display'],
-        review: ['PT Serif']
+        review: ['PT Serif'],
+        robo: ['Roboto']
       },
     },
   },
