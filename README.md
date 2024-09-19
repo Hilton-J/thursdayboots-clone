@@ -14,3 +14,5 @@ Currently, two official plugins are available:
 **REACT-ICONS** : npm i react-icons --save
 **REACT-CAROUSEL** : npm i -S pure-react-carousel
 **REACT-SWIPER** : npm i swiper
+**FLOWBITE** : npm i flowbite flowbite-react
+

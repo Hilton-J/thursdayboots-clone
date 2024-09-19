@@ -4,7 +4,7 @@ import { IoChevronDownSharp } from "react-icons/io5"
 import { PiHandbagSimple } from "react-icons/pi"
 import { useState } from "react"
 import Drawer from "./Drawer"
-
+import MenPopover from "./MenPopover"
 
 const NavBar = () => {
   const [openLeft, setOpenLeft] = useState(false);
@@ -12,15 +12,15 @@ const NavBar = () => {
 
   const openDrawerLeft = () => setOpenLeft(!openLeft);
   return (
-    <>
-      <div className="flex px-6 bg-orange-600  md:bg-transparent hover:bg-slate-600 md:absolute text-white  hover:text-black w-full h-16 z-50"> {/**Added h-16 */}
+    <div className="md:absolute z-50">
+      <div className="flex px-6 bg-orange-600  md:bg-transparent hover:bg-slate-600  text-white  hover:text-black w-full h-16 z-50"> {/**Added h-16 */}
         <nav className="flex-1 flex items-center">
 
           <a className="block md:hidden" onClick={openDrawerLeft}><HiMiniBars3 /></a>
 
           <ul className="hidden md:flex gap-4 items-center h-full"> {/**Added h-Full */}
 
-            <li className="h-full"><div className="border-b-2 border-transparent hover:border-b-black h-full flex items-center"><a >MEN<IoChevronDownSharp className="inline" /></a></div></li> {/**Added li:h-full  div: flex items-center h-full */}
+            <li className="h-full"><div className="border-b-2 border-transparent hover:border-b-black h-full flex items-center"><a data-popover-target="popover-default">MEN<IoChevronDownSharp className="inline" /></a></div></li> {/**Added li:h-full  div: flex items-center h-full */}
 
             <li className="h-full"><div className="border-b-2 border-transparent hover:border-b-black h-full flex items-center"><a>WOMEN<IoChevronDownSharp className="inline" /></a></div></li>
             <li><a>ABOUT</a></li>
@@ -55,7 +55,6 @@ const NavBar = () => {
           </a>
         </div>
 
-
         <div className="flex-1 flex items-center justify-end">
           <ul className="flex gap-4 items-center">
             <li className="hidden md:block"><a>HELP</a></li>
@@ -65,9 +64,9 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
-
+      <MenPopover />
       <Drawer openLeft={openLeft} openDrawerLeft={openDrawerLeft} />
-    </>
+    </div>
   )
 }
 

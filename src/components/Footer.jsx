@@ -152,21 +152,22 @@ const Footer = () => {
             </div>
 
             {/* ======================= SIGN UP ================================= */}
-            <div className="px-5 py-6 flex flex-col">
+            <div className="px-5 py-6 flex flex-col md:w-full">
               <h2 className="mb-7 font-medium  text-center">
                 Sign Up For Early Access & Exclusive Events
               </h2>
-              <form className="space-x-3">
+              <form className="space-x-3 flex justify-center">
                 <input
                   type="email"
-                  className="border-2 border-black py-2 text-sm px-4 w-[75%]"
+                  className="border-2 border-black py-2 text-sm px-4 w-[75%] md:w-[40%]"
                   defaultValue=""
                   required=""
                   name="email"
                   id="email"
                   placeholder="email@example.com"
                 />
-                <Button text={"JOIN"} style={'font-robo bg-[#2374ab] hover:bg-[#d8d8d8] text-white py-[10px] px-3 text-sm w-[100px]'} />
+                <Button text={"JOIN"} style={'font-robo bg-[#2374ab] hover:bg-[#d8d8d8] text-white py-[10px] px-3 text-sm w-[100px] block md:hidden'} />
+                <Button text={"JOIN TEAM THURSDAY"} style={'font-robo bg-[#2374ab] hover:bg-[#d8d8d8] text-white py-[10px] px-4 w-[250px] text-sm md:block hidden'} />
               </form>
               <div className='text-2xl text-neutral-600 flex justify-center space-x-5 mt-6'>
                 <a className="hover:text-neutral-400"><IoLogoInstagram /></a>
@@ -175,10 +176,10 @@ const Footer = () => {
                 <a className="hover:text-neutral-400"><IoLogoPinterest /></a>
                 <a className="hover:text-neutral-400"><BsYoutube /></a>
               </div>
-              <a className="text-center mt-auto hover:text-[#2374ab] cursor-pointer underline">View In Accessibility Mode</a>
+              <a className="text-center mt-10 hover:text-[#2374ab] cursor-pointer underline">View In Accessibility Mode</a>
             </div>
 
-            <div className="px-5 py-6">
+            <div className="px-5 py-6 md:hidden">
               <ul className=" text-gray-500 flex justify-center gap-6 text-xs ">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">

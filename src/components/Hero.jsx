@@ -2,7 +2,7 @@ import Button from "./Button"
 
 const Hero = () => {
   return (
-    <div className="bg-hero-bg1P md:bg-hero-bg1L bg-no-repeat bg-cover bg-center h-screen flex flex-col">
+    <div className="bg-hero-bg1P md:bg-hero-bg1L2 xlg:bg-hero-bg1L bg-no-repeat bg-cover bg-center h-screen flex flex-col">
 
       <div className="flex-1 flex text-white  ">
         <div className="text-center w-full h-full md:w-[400px] space-y-9 flex flex-col mt-8 md:justify-center  md:ml-10">
