@@ -21,16 +21,28 @@ const Card = () => {
       title: "Men's Jackets",
       desc: 'Thoughtfully Designed For Your Everyday'
     },
+    {
+      id: 4,
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0419/1525/files/400x300-Men-Belts_400x300.jpg?v=1613639603',
+      title: "Leather Belts",
+      desc: 'The Perfect Finishing Touch.'
+    },
+    {
+      id: 5,
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0419/1525/files/400x300-ShoeCare_224x160.jpg?v=1614296603',
+      title: "So Fresh & So Clean",
+      desc: 'Premium Shoe Care for Your Favorite Pair of Boots'
+    },
   ]
 
   return (
-    <div>
-      <div className="flex p-3 gap-2">
+    <div className="w-full">
+      <div className="flex p-3 gap-8">
         {data.map((item) => (
-          <div key={item.id} className="w-45 flex flex-col">
-            <img src={item.imageUrl} alt={item.title} className="size-full" />
-            <h4>{item.title}</h4>
-            <h4>{item.desc}</h4>
+          <div key={item.id} className="w-44 flex flex-col gap-1">
+            <img src={item.imageUrl} alt={item.title} className="size-full object-fill" />
+            <h6 className="text-gray-900 mt-3">{item.title}</h6>
+            <p>{item.desc}</p>
           </div>))}
       </div>
     </div>

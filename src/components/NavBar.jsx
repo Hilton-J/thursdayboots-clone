@@ -12,7 +12,7 @@ const NavBar = () => {
 
   const openDrawerLeft = () => setOpenLeft(!openLeft);
   return (
-    <div className="md:absolute z-50">
+    <div className="md:absolute z-50 w-full">
       <div className="flex px-6 bg-orange-600  md:bg-transparent hover:bg-slate-600  text-white  hover:text-black w-full h-16 z-50"> {/**Added h-16 */}
         <nav className="flex-1 flex items-center">
 
